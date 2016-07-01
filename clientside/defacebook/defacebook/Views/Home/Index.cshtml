@@ -1,0 +1,44 @@
+﻿@model defacebook.Models.login
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @ViewBag.text
+    </div>
+    <div style="margin:0 auto; text-align: center; border: 2px; border-style: solid; width:400px;background-color:bisque">
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(m => m.username)</td> @*Label to display username*@
+                    <td>@Html.TextBoxFor(m => m.username)</td> @*Textbox for user input*@
+                    <td>@Html.ValidationMessageFor(m => m.username)</td> @*Show validation error (if any) on form submission*@
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.password)</td> @*Label for pasword*@
+                    <td>@Html.PasswordFor(m => m.password)</td> @*Password box for inputting password*@
+                    <td>@Html.ValidationMessageFor(m => m.password)</td> @*Show validation errors(if any) on form submission*@
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        @ViewBag.Message
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

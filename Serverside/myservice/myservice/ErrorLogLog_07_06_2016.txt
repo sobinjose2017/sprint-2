@@ -1,0 +1,11 @@
+07-06-2016 15:40:12 	System.Web.HttpException (0x80004005): The "SendUsing" configuration value is invalid.
+ ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Runtime.InteropServices.COMException: The "SendUsing" configuration value is invalid.
+
+   --- End of inner exception stack trace ---
+   at System.RuntimeType.InvokeDispMethod(String name, BindingFlags invokeAttr, Object target, Object[] args, Boolean[] byrefModifiers, Int32 culture, String[] namedParameters)
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.Web.Mail.SmtpMail.LateBoundAccessHelper.CallMethod(Object obj, String methodName, Object[] args)
+   at System.Web.Mail.SmtpMail.LateBoundAccessHelper.CallMethod(Object obj, String methodName, Object[] args)
+   at System.Web.Mail.SmtpMail.CdoSysHelper.Send(MailMessage message)
+   at System.Web.Mail.SmtpMail.Send(MailMessage message)
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 66

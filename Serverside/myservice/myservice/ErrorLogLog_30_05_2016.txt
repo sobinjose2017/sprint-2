@@ -1,0 +1,25 @@
+30-05-2016 11:17:58 	System.FormatException: The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 39
+30-05-2016 11:18:14 	System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 56
+30-05-2016 11:20:36 	System.NullReferenceException: Object reference not set to an instance of an object.
+   at myservice.Concls.ConnStr() in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Concls.cs:line 13
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 36
+30-05-2016 11:25:30 	System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 56
+30-05-2016 11:29:43 	System.FormatException: The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at myservice.Service2.InsertIntoRegister(String fname, String lname, String username, String password, String gender, String datestirng) in c:\Users\sobin jose\Documents\Visual Studio 2012\Projects\myservice\myservice\Service2.svc.cs:line 39
